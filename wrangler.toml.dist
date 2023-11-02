@@ -1,0 +1,13 @@
+name = "cloudflare-workers-hono-email-endpoint"
+main = "src/index.ts"
+compatibility_date = "2023-10-16"
+node_compat = true
+workers_dev = true
+
+[vars]
+API_TOKEN = "XXXXXXXXXXXXXXXX"
+API_END_POINT_MAILCHANNELS = "https://api.mailchannels.net/tx/v1/send"
+MC_FROM_EMAIL = "noreply@example.com"
+MC_FROM_NAME = "Example"
+MC_DKIM_DOMAIN = "example.com"
+MC_DKIM_SELECTOR = "mailchannels"
